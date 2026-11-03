@@ -108,7 +108,7 @@ export default function UrlShortner() {
             {item.shortUrl}
           </a>
 
-          <button onClick={() => navigator.clipboard.writeText(item.shortUrl)}>
+          <button className="copy-btn" onClick={() => navigator.clipboard.writeText(item.shortUrl)}>
             Copy
           </button>
         </div>
