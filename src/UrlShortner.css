@@ -1,0 +1,53 @@
+
+.url-container {
+  margin-top: 40px;
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #3b3054;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.url-input-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.url-input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.url-input:focus {
+  outline: none;
+  border-color: #2acfcf;
+}
+
+.shorten-btn {
+  background-color: #2acfcf;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shorten-btn:hover {
+  background-color: #9be3e2;
+}
+
+.shorten-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
