@@ -1,7 +1,7 @@
 
 .url-container {
   margin-top: 40px;
-  background-image: url("/images/bg-boost-desktop.svg");
+  background-image: url("../images/bg-boost-desktop.svg");
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;

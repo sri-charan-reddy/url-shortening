@@ -1,4 +1,6 @@
 import "./Hero.css";
+import illustrationWorking from "../images/illustration-working.svg";
+
 export default function Hero() {
   return (
     <section className="hero" aria-labelledby="hero-heading">
@@ -16,9 +18,7 @@ export default function Hero() {
         </button>
       </div>
       <div className="hero-image">
-        <img
-          src="/images/illustration-working.svg"
-        />
+        <img src={illustrationWorking} alt="" />
       </div>
     </section>
   );

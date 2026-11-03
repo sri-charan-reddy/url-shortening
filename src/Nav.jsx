@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import logo from "../images/logo.svg";
 
 const mainLinks = [
   { label: "Features", href: "#features" },
@@ -10,7 +11,7 @@ function Navbar() {
   return (
     <header className="site-header">
       <nav className="navbar">
-        <img src="images/logo.svg" />
+        <img src={logo} alt="Shortly" />
         <div className="nav-bar-items">
           <ul className="navbar-links">
             {mainLinks.map((link) => (
