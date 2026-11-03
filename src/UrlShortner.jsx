@@ -1,9 +1,8 @@
 import "./UrlShortner.css";
-import { useState,useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function UrlShortner() {
   const [url, setUrl] = useState("");
-  const [shortUrl, setShortUrl] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [history, setHistory] = useState(() => {
@@ -20,8 +19,6 @@ export default function UrlShortner() {
 
   async function shortenUrl() {
     setError("");
-    setShortUrl("");
-
     if (!url.trim()) {
       setError("Please enter a URL.");
       return;
@@ -69,8 +66,6 @@ export default function UrlShortner() {
       }
 
       if (data.short_url) {
-        setShortUrl(data.short_url);
-
         setHistory((prevHistory) => [
           ...prevHistory,
           {
